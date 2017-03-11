@@ -1,9 +1,5 @@
-<p id="notice"><%= notice %></p>
+<h1> class="page-title">New City</h1>
 
-<h1 class="page-title"><%= @review.title %></h1>
-<div class="page-image"><%= image_tag @review.picture.url (:medium) %></div>
+<%= render 'form', city: @city %>
 
-<div class="review-body"><%= @review.body %></div>
-
-<%= link_to 'Edit', edit_review_path(@review) %> |
-<%= link_to 'Back', reviews_path %>
+<%= link_to 'Back', cities_path %>
